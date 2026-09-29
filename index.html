@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#071b33" />
+  <meta name="description" content="CDA Start — guia de integração e orientação para novos colaboradores do Laboratório CDA." />
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <link rel="icon" href="/logo.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+  <title>CDA Start — Guia de Integração</title>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Navegação principal">
+      <div class="brand-block">
+        <img src="/logo.svg" alt="" class="brand-mark" />
+        <div><strong>CDA<span>Start</span></strong><small>guia de integração</small></div>
+      </div>
+      <div class="side-label">Seu mapa de início</div>
+      <nav id="sidebar-nav"></nav>
+      <div class="side-note"><span class="pulse-dot"></span><div><strong>Modo offline</strong><small>Seu progresso fica neste dispositivo.</small></div></div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <button class="icon-button menu-toggle" id="menu-toggle" aria-label="Abrir menu">☰</button>
+        <div class="crumbs"><span>Integração</span><b>/</b><strong id="current-label">Visão geral</strong></div>
+        <div class="top-actions"><a class="site-link" href="https://www.cdalaboratorio.com.br/" target="_blank" rel="noreferrer">Site CDA ↗</a><button class="avatar" aria-label="Perfil local">CS</button></div>
+      </header>
+
+      <section class="content-wrap">
+        <div id="app-content" aria-live="polite"></div>
+      </section>
+    </main>
+  </div>
+  <div class="mobile-nav" id="mobile-nav"></div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="/app.js"></script>
+</body>
+</html>
