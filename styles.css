@@ -28,3 +28,7 @@
 .floor-card{align-items:flex-start}
 .toast{bottom:76px}
 @media(min-width:521px){body{background:#eaf0f3}.app-shell{box-shadow:0 0 50px rgba(7,27,51,.08)}}
+
+/* Tubos e coleta */
+.tube-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.tube-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:15px}.tube-head{display:flex;gap:11px;align-items:center}.tube-head h3{font-size:13px;margin:0}.tube-head span:not(.tube-visual){display:block;color:var(--muted);font-size:10px;margin-top:2px}.tube-card p{font-size:10px;color:var(--muted);margin:12px 0 0;line-height:1.5}.tube-visual,.tube-dot{display:inline-block;flex:none;border:1px solid rgba(7,27,51,.18)}.tube-visual{width:18px;height:42px;border-radius:5px 5px 7px 7px;position:relative}.tube-visual:before{content:'';position:absolute;left:-1px;right:-1px;top:-6px;height:7px;border-radius:4px 4px 2px 2px;background:inherit;border:1px solid rgba(7,27,51,.18)}.tube-dot{width:10px;height:10px;border-radius:50%;vertical-align:-1px;margin-right:5px}.tube-gold{background:#f1c84b}.tube-red{background:#e86a63}.tube-lavender{background:#aa82c9}.tube-blue{background:#72b9e8}.tube-gray{background:#9da9b2}.tube-green{background:#58a878}.tube-black{background:#29343b}.tube-urine{background:#f5ed9a}.tube-stool{background:#a9784f}.tube-cervical{background:#ef9eaa}.tube-line{display:block}
+@media(max-width:680px){.tube-grid{grid-template-columns:1fr}.tube-card{padding:14px}}
